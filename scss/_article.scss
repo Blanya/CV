@@ -1,0 +1,40 @@
+.parallax {
+    /* The image used */
+    /* background-image: url("../img/code.jpg"); */
+    background-image: url("../img/sand2.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.article__about
+{
+  display: flex;
+  justify-content: space-around
+}
+.article__about--fst, .article__about--scd
+{
+  text-align: center;
+  margin: 0 auto;
+  width: 30vw;
+  text-align: justify;
+}
+.article__passion
+{
+  display:flex;
+  justify-content: space-around;
+  width: 70vw;
+  margin-left: 15vw;
+}
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 15;
+  left: 25;
+}
