@@ -1,7 +1,7 @@
 .parallax {
     /* The image used */
     /* background-image: url("../img/code.jpg"); */
-    background-image: url("../img/sand2.jpg");
+    background-image: url("../img/black.jpg");
   
     /* Set a specific height */
     min-height: 500px; 
@@ -16,12 +16,12 @@
 .article__about
 {
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
+  width: 65vw;
+  margin: auto;
 }
-.article__about--fst, .article__about--scd
+.article__about--fst
 {
-  text-align: center;
-  margin: 0 auto;
   width: 30vw;
   text-align: justify;
 }
@@ -29,12 +29,26 @@
 {
   display:flex;
   justify-content: space-around;
-  width: 70vw;
-  margin-left: 15vw;
+  width: 60vw;
+  margin: 0 auto;
+  text-align: left;
 }
-div.sticky {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 15;
-  left: 25;
+.article__experiences, .article__formations
+{
+  width: 50vw;
+  margin: auto;
+  text-align: left;
+}
+h3
+{
+  margin-top: 1.2em;
+}
+.article__competences
+{
+  width: 60vw;
+  margin: auto;
+}
+.article__icone
+{
+  width: 4vw;
 }

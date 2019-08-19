@@ -10,15 +10,15 @@
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
     <title>Document</title>
 </head>
-<header>
+<header id="header">
     <div class="header__presentation">
-    <img src="img/Marianne.jpg" alt="moi" class="img__presentation" />
-    <h1>Marianne Beudaert</h1>
+    <img src="img/Marianne.jpg" alt="moi" class="img__presentation" id="img__presentation"/>
+    <h1 id="title">Marianne Beudaert</h1>
     <h2>Développeuse Web/ Web mobile Junior</h2>
     <button id="btn__cv">Voir mon CV</button>
     <button id="btn__profil">Voir mon profil</button>
     </div>
- <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Navbar</a> 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
       </ul>
-</nav>   --> 
+</nav> -->
 </header>
 
 <body>
@@ -47,7 +47,7 @@
                 <h3>A propos de moi</h3>
                 <hr/>
                 <p>
-                    Vous recherchez une développeuse web pour effectuer votre projet ? Me voici. <br/>
+                    Vous recherchez une développeuse web pour effectuer votre projet ? Je me présente. <br/>
                     Ayant cherché durant un temps ma vocation, je me suis tournée vers la création de site web suite à diverses recherches.
                     C'est un métier pour lequel j'avais quelques apétences, j'ai souhaité en savoir plus. La curiosité est un de mes points forts. Je suis de nature rigoureuse, organisée.
                     Je suis titulaire d'un permis B et véhiculée. Je fais partie d'une association de boules au cadran: la Cité Verte à Bruay, j'en suis la Vice-présidente ainsi que la secrétaire.
@@ -55,12 +55,27 @@
                 
                 </div>
                 <div class="article__about--scd">
-                <p>
-                    Age: 22 ans<br/>
-                    Adresse: 35 rue de Normandie, 62700 Bruay-la-Buissière<br/>
-                    Mail: x_Mariannee@hotmail.fr<br/>
-                    Tel: 06.14.50.86.24<br/>
-                </p>
+                   <table>
+                       <tr>
+                           <th>Age</th>
+                           <td>22 ans</td>
+                       </tr>
+                       <tr>
+                           <th rowspan="2">Adresse</th>
+                           <td class="table__adress">35 rue de Normandie</td>
+                       </tr>
+                       <tr>
+                           <td>62700 Bruay-la-buissière</td>
+                       </tr>
+                       <tr>
+                            <th>Mail</th>
+                            <td>marianne.beudaert@blanya.fr</td>
+                       </tr>
+                       <tr>
+                           <th>Tel</th>
+                           <td>06.14.50.86.24</td>
+                       </tr>
+                   </table>
                 </div>
         </article>
                 <!-- <div class="sticky">
@@ -69,7 +84,7 @@
                 <li><i class="fas fa-phone-square-alt"></i> 06.14.50.86.24</li>
                 </ul> -->
         <div class="parallax"></div>
-        <article>
+        <article class="article__experiences">
 
         <h3>Expériences</h3>
         <hr/>
@@ -86,10 +101,10 @@
 
         </article>
         
-        <article>
+        <article class="article__formations">
 
         <h3>Formations</h3>
-        </hr>
+        <hr/>
             <ul>
                 <li>2019 Formation de développeuse web/ web mobile, Lens</li>
                 <li>2016-2017 Dispositif régional Arobase3C, aide à l’orientation professionnelle EPISTEME, Bruay-la-Buissière avec le CIBC de Béthune</li> 
@@ -116,16 +131,17 @@
             <a href="http://blanya.fr/Perso"> <img src="img/projet.png" alt="projet" class="article__project-img"> </a>
         </article>
         </div>
-        <article>    
+        <article class="article__competences">    
             <h3>Compétences</h3>
             <hr/>
         
-                <img src="img/html.png" alt="html"/>
-                <img src="img/css.png" alt="css"/>
-                <a href="https://github.com/Blanya"><img src="img/github.png" alt="github"/></a>
-                <img src="img/wordpress.png" alt="wordpress"/>
-                <img src="img/c.png" alt="C"/>
-                <a href="https://github.com/Blanya/Calculatrice/blob/master/calculatrice.js"><img src="img/js.png" alt="JS"/></a>
+                <img src="img/html5.png" alt="html" class="article__icone"/>
+                <img src="img/css3.png" alt="css" class="article__icone"/>
+                <a href="https://github.com/Blanya"><img src="img/github.png" alt="github" class="article__icone"/></a>
+                <img src="img/wordpress.png" alt="wordpress" class="article__icone"/>
+                <img src="img/c.png" alt="C" class="article__icone"/>
+                <img src="img/javascript.png" alt="JS" class="article__icone"/></a>
+                <img src="img/symfony.png" alt="symfony" class="article__icone"/>
         
         </article>
     </section>
