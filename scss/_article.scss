@@ -25,13 +25,11 @@
   width: 30vw;
   text-align: justify;
 }
-.article__passion
+.passion__projects
 {
-  display:flex;
-  justify-content: space-around;
-  width: 60vw;
+  width: 65vw;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
 }
 .article__experiences, .article__formations
 {
@@ -45,10 +43,23 @@ h3
 }
 .article__competences
 {
-  width: 60vw;
+  width: 70vw;
   margin: auto;
+}
+
+.article__passion-img
+{
+  height: 25vh;
+  width: 20vw;
+  margin: 2em;
+}
+.article__passion-list
+{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
 }
 .article__icone
 {
-  width: 4vw;
+  width: 8em;
 }

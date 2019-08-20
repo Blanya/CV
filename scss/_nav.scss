@@ -1,0 +1,13 @@
+nav
+{
+    background-color: grey;
+    height: 5vh;
+    color: white;
+}
+.nav__list
+{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding-top: 0.5em;
+}
