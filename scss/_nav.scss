@@ -1,13 +1,35 @@
-nav
-{
-    background-color: grey;
-    height: 5vh;
-    color: white;
-}
+@import 'vars';
 .nav__list
 {
-    display: flex;
     list-style-type: none;
+    padding-top: 0.2em; 
+    display: flex;
     justify-content: space-around;
-    padding-top: 0.5em;
+    flex-wrap: wrap;
+    background-color: $backco;
+    position: fixed;
+    width: 100%;
+}
+nav a
+{
+    color: lightgrey;
+}
+nav a:hover
+{
+    text-decoration: none;
+    color: white;
+}
+@media (min-width: 620px)
+{
+.nav__list
+{
+   
+    font-size: 1.3em;
+    position: fixed;
+}
+
+nav
+{
+    height: 5vh;
+} 
 }

@@ -3,8 +3,6 @@ button
     border-radius: 12px 0 12px 0;
     background-color: rgb(38, 49, 99);
     color: white;
-    width: 20em;
-    height: 3em;
     border: none;
     border-bottom: solid;
     margin: 0.1rem;
@@ -12,15 +10,34 @@ button
 }
  #btn__cv
 {
-    position: absolute;
-    left: 3em;
-    top: 4em;
+    
     border-color: rgb(163, 127, 61);
     background-color: rgb(228, 173, 70);
 }
-#btn__profil
+@media (min-width: 620px)
+{#btn__profil
 {
     position: absolute;
     right: 3em;
     bottom: 4em;
 }
+button
+{
+    width: 5em;
+    height: 3em;
+}
+#btn__cv
+{
+    position: absolute;
+    left: 3em;
+    top: 4em;
+}
+}
+@media(min-width: 1000px)
+{
+    button
+{
+    width: 20em;
+    height: 3em;
+} 
+} 

@@ -1,6 +1,23 @@
 .article__project-img
 {
-    width: 30vw;
+    width: 60vw;
     margin-bottom: 2em;
     border: 2px solid black;
+}
+.article__icone
+{
+  width: 4em;
+  margin: auto;
+}
+@media (min-width: 620px)
+{
+    .article__project-img
+    {
+        width: 30vw;
+    }
+    .article__icone
+    {
+        width: 8em;
+        margin: auto;
+    }
 }

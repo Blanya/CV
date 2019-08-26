@@ -1,7 +1,6 @@
 .parallax 
 {
     /* The image used */
-    /* background-image: url("../img/code.jpg"); */
     background-image: url("../img/black.jpg");
   
     /* Set a specific height */
@@ -16,25 +15,21 @@
 
 .article__about
 {
-  display: flex;
-  justify-content: space-around;
   width: 65vw;
   margin: auto;
 }
 .article__about--fst
 {
-  width: 30vw;
-  text-align: justify;
+  text-align: left;
 }
 .passion__projects
 {
-  width: 65vw;
   margin: 0 auto;
-  text-align: center;
+  width: 75vw;
+  /* text-align: center; */
 }
 .article__experiences, .article__formations
 {
-  width: 50vw;
   margin: auto;
   text-align: left;
 }
@@ -44,23 +39,18 @@ h3
 }
 .article__competences
 {
-  width: 70vw;
   margin: auto;
 }
 
 .article__passion-img
 {
-  height: 25vh;
-  width: 20vw;
-  margin: 2em;
+  height: auto;
+  width: 60vw;
 }
 .article__passion-list
 {
-  display: flex;
-  justify-content: space-around;
   list-style-type: none;
 }
-
 .infobulle
 {
   cursor: help;
@@ -79,12 +69,53 @@ a:focus span, a:hover span
   /* display: flex;
   flex-direction: column; */
 }
-.article__icone
-{
-  width: 8em;
-  margin: auto;
-}
 hr
 {
   position: relative;
+}
+td a, button a
+{
+  color: white;
+  text-decoration: none;
+}
+td a:hover
+{
+  color: white;
+}
+.article__contact
+{
+  text-align: right;
+  margin-right: 2em;
+}
+
+@media (min-width: 620px)
+{
+  .article__about
+  {
+  display: flex;
+  justify-content: space-around;
+  }
+  .article__about--fst
+  {
+    width: 30vw;
+  }
+  .article__experiences, .article__formations
+  {
+    width: 50vw;
+  }
+  .article__passion-list
+  {
+    display: flex;
+    justify-content: space-around;
+  }
+  .article__passion-img
+  {
+    height: 25vh;
+    width: 20vw;
+    margin: 2em;
+  }
+  .passion__projects
+  {
+    width: 65vw;
+  }
 }

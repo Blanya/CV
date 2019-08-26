@@ -8,9 +8,9 @@ header
 .img__presentation
 {
     border-radius: 50%;
-    width:  15vw;
-    height: auto;
-    margin: 12vh auto;
+    width: 40vw;
+    margin: 1em;
+    margin-top: 20vh;
 }
 .header__presentation
 {
@@ -23,6 +23,19 @@ header
 }
 h1
 {
-    margin-top: 10vh;
+    margin-top: 3vh;
+   
+}
+@media(min-width:620px)
+{
+.img__presentation
+{
+    width: 15vw;
+    height: auto;
+    margin: 12vh auto;
+} 
+h1
+{
     font-size: 4.5em;
+}
 }
