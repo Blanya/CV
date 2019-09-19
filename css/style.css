@@ -1512,6 +1512,10 @@ nav a:hover {
   margin: auto;
 }
 
+.article__icone-contact {
+  width: 3em;
+}
+
 @media (min-width: 620px) {
   .article__project-img {
     width: 30vw;
@@ -1520,6 +1524,10 @@ nav a:hover {
   .article__icone {
     width: 8em;
     margin: auto;
+  }
+
+  .article__icone-contact {
+    width: 7em;
   }
 }
 body {
