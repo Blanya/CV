@@ -15,10 +15,10 @@
 
 .article__about
 {
-  width: 90vw;
+  width: 65vw;
   margin: auto;
 }
-.article__about--fst, .article__about--scd
+.article__about--fst
 {
   text-align: left;
 }
@@ -73,35 +73,19 @@ hr
 {
   position: relative;
 }
-ul a, button a
+td a, button a
 {
   color: white;
   text-decoration: none;
 }
-ul a:hover
+td a:hover
 {
   color: white;
 }
-.article__about--scd a 
+.article__contact
 {
-  font-weight: bold;
-}
-.article__important
-{
-  font-weight: bold;
-}
-h3
-{
-  font-size: 1.5em;
-}
-.article__about--scd
-{
-  padding-top: 5vh;
-  overflow: visible;
-}
-.article__about--scd ul
-{
-  list-style-type: none;
+  text-align: right;
+  margin-right: 2em;
 }
 
 @media (min-width: 620px)
@@ -110,7 +94,6 @@ h3
   {
   display: flex;
   justify-content: space-around;
-  width: 65vw;
   }
   .article__about--fst
   {
@@ -134,14 +117,5 @@ h3
   .passion__projects
   {
     width: 65vw;
-  }
-  .article__about--scd
-  {
-    padding-top: 12vh;
-  }
-  article 
-  {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
   }
 }
