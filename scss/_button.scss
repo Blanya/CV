@@ -28,9 +28,7 @@ button
 }
 #btn__cv
 {
-    position: absolute;
-    left: 3em;
-    top: 4em;
+    position: unset;
 }
 }
 @media(min-width: 1000px)
@@ -39,5 +37,6 @@ button
 {
     width: 20em;
     height: 3em;
+    margin: 2em;
 } 
 } 
