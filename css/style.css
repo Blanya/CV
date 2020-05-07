@@ -1317,13 +1317,12 @@ h1 {
 
 @media (min-width: 620px) {
   .img__presentation {
-    width: 15vw;
+    width: 10em;
     height: auto;
-    margin: 12vh auto;
   }
 
   h1 {
-    font-size: 4.5em;
+    font-size: 3em;
   }
 }
 .parallax {
@@ -1345,6 +1344,26 @@ h1 {
 
 .article__about--fst {
   text-align: left;
+}
+
+.article__about--scd {
+  text-align: left;
+  margin-left: -2em;
+}
+
+.article__passion-element {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.article__about--scd li {
+  list-style-type: none;
+}
+
+.article__about--scd a {
+  color: lightgray;
 }
 
 .passion__projects {
@@ -1369,10 +1388,7 @@ h3 {
 .article__passion-img {
   height: auto;
   width: 60vw;
-}
-
-.article__passion-list {
-  list-style-type: none;
+  margin: auto;
 }
 
 .infobulle {
@@ -1406,9 +1422,8 @@ td a:hover {
   color: white;
 }
 
-.article__contact {
-  text-align: right;
-  margin-right: 2em;
+.article__title {
+  text-align: center;
 }
 
 @media (min-width: 620px) {
@@ -1449,6 +1464,7 @@ td a:hover {
   position: fixed;
   padding: 0.2em 5vw;
   width: 100%;
+  z-index: 3;
 }
 
 nav a {
@@ -1464,7 +1480,6 @@ nav a:hover {
 @media (min-width: 620px) {
   .nav__list {
     font-size: 1.3em;
-    position: fixed;
   }
 
   nav {
@@ -1514,30 +1529,13 @@ button {
   background-color: #e4ad46;
   position: relative;
   top: 1.5em;
+  z-index: 2;
+  height: 3em;
 }
 
-@media (min-width: 620px) {
-  #btn__profil {
-    position: absolute;
-    right: 3em;
-    bottom: 4em;
-  }
-
-  button {
-    width: 5em;
-    height: 3em;
-  }
-
-  #btn__cv {
-    position: absolute;
-    left: 3em;
-    top: 4em;
-  }
-}
 @media (min-width: 1000px) {
   button {
     width: 20em;
-    height: 3em;
   }
 }
 table, td, th {

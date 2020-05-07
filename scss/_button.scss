@@ -13,31 +13,13 @@ button
     background-color: rgb(228, 173, 70);
     position: relative;
     top: 1.5em;
-}
-@media (min-width: 620px)
-{#btn__profil
-{
-    position: absolute;
-    right: 3em;
-    bottom: 4em;
-}
-button
-{
-    width: 5em;
+    z-index: 2;
     height: 3em;
-}
-#btn__cv
-{
-    position: absolute;
-    left: 3em;
-    top: 4em;
-}
 }
 @media(min-width: 1000px)
 {
     button
 {
     width: 20em;
-    height: 3em;
 } 
 } 

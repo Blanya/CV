@@ -22,6 +22,26 @@
 {
   text-align: left;
 }
+.article__about--scd
+{
+  text-align: left;
+  margin-left: -2em;
+}
+.article__passion-element
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.article__about--scd li
+{
+  list-style-type: none;
+}
+.article__about--scd a
+{
+  color: lightgray;
+}
 .passion__projects
 {
   margin: 0 auto;
@@ -41,15 +61,11 @@ h3
 {
   margin: auto;
 }
-
 .article__passion-img
 {
   height: auto;
   width: 60vw;
-}
-.article__passion-list
-{
-  list-style-type: none;
+  margin: auto;
 }
 .infobulle
 {
@@ -82,10 +98,9 @@ td a:hover
 {
   color: white;
 }
-.article__contact
+.article__title
 {
-  text-align: right;
-  margin-right: 2em;
+  text-align: center;
 }
 
 @media (min-width: 620px)
