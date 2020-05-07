@@ -6,12 +6,8 @@
 }
 .article__icone
 {
-    width: 4em;
-    margin: auto;
-}
-.article__icone-contact
-{
-    width: 3em;
+  width: 4em;
+  margin: auto;
 }
 @media (min-width: 620px)
 {
@@ -23,9 +19,5 @@
     {
         width: 8em;
         margin: auto;
-    }
-    .article__icone-contact
-    {
-        width: 7em;
     }
 }
