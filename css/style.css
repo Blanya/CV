@@ -1356,6 +1356,7 @@ h1 {
   flex-direction: column;
   text-align: center;
   margin-bottom: 2em;
+  font-size: 1.1em;
 }
 
 .article__about--scd li {
@@ -1426,23 +1427,9 @@ td a:hover {
   text-align: center;
 }
 
-@media (min-width: 620px) {
-  .article__about {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .article__about--fst {
-    width: 30vw;
-  }
-
-  .article__experiences, .article__formations {
-    width: 50vw;
-  }
-
-  .article__passion-list {
-    display: flex;
-    justify-content: space-around;
+@media (min-width: 920px) {
+  .passion__projects {
+    width: 65vw;
   }
 
   .article__passion-img {
@@ -1451,8 +1438,25 @@ td a:hover {
     margin: 2em;
   }
 
-  .passion__projects {
-    width: 65vw;
+  .article__passion-list {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1020px) {
+  .article__about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90vw;
+  }
+
+  .article__about--fst {
+    width: 30vw;
+  }
+
+  .article__experiences, .article__formations {
+    width: 70vw;
   }
 }
 .nav__list {
@@ -1497,14 +1501,23 @@ nav a:hover {
   margin: auto;
 }
 
+.article__passion-img {
+  margin-bottom: 0.7em;
+}
+
 @media (min-width: 620px) {
-  .article__project-img {
-    width: 30vw;
+  .article__icone {
+    width: 6em;
+    margin: auto;
   }
 
-  .article__icone {
-    width: 8em;
-    margin: auto;
+  .article__icone-contact {
+    width: 6em;
+  }
+}
+@media (min-width: 1020px) {
+  .article__project-img {
+    width: 40vw;
   }
 }
 body {

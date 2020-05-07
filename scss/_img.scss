@@ -9,15 +9,26 @@
   width: 4em;
   margin: auto;
 }
+.article__passion-img
+{
+    margin-bottom: .7em;
+}
 @media (min-width: 620px)
+{
+    .article__icone
+    {
+        width: 6em;
+        margin: auto;
+    }
+    .article__icone-contact
+    {
+        width: 6em;
+    }
+}
+@media (min-width: 1020px)
 {
     .article__project-img
     {
-        width: 30vw;
-    }
-    .article__icone
-    {
-        width: 8em;
-        margin: auto;
+        width: 40vw;
     }
 }
