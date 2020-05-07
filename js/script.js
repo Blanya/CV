@@ -10,8 +10,4 @@ function change()
 }
 
 let btn= document.getElementById("btn__cv");
-let btnScd= document.getElementById("btn__profil");
 btn.addEventListener("click", change);
-btnScd.addEventListener("click", change);
-
-

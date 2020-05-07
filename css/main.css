@@ -1304,11 +1304,11 @@ header {
 }
 
 .header__presentation {
+  /* background-color: white; */
+  /* width: 30vw;
+  height: 40vh;
+  padding-top: 5em; */
   color: white;
-}
-
-.title_description {
-  margin: auto 0.4em;
 }
 
 h1 {
@@ -1442,18 +1442,17 @@ td a:hover {
 }
 .nav__list {
   list-style-type: none;
+  padding-top: 0.2em;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: #010202;
   position: fixed;
-  padding: 0.2em 5vw;
   width: 100%;
 }
 
 nav a {
   color: lightgrey;
-  padding: 0 0.5rem;
 }
 
 nav a:hover {
@@ -1465,6 +1464,7 @@ nav a:hover {
   .nav__list {
     font-size: 1.3em;
     position: fixed;
+    background-color: blue;
   }
 
   nav {
@@ -1502,6 +1502,7 @@ body {
 
 button {
   border-radius: 12px 0 12px 0;
+  background-color: #263163;
   color: white;
   border: none;
   border-bottom: solid;
@@ -1512,8 +1513,6 @@ button {
 #btn__cv {
   border-color: #a37f3d;
   background-color: #e4ad46;
-  position: relative;
-  top: 1.5em;
 }
 
 @media (min-width: 620px) {
@@ -1558,4 +1557,4 @@ table {
   border-bottom: none;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
