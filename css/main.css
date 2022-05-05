@@ -1290,7 +1290,7 @@ template {
   }
 }
 header {
-  background-image: url(../img/sand.jpg);
+  background-image: url(../img/blacksand.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -1304,11 +1304,11 @@ header {
 }
 
 .header__presentation {
+  /* background-color: white; */
+  /* width: 30vw;
+  height: 40vh;
+  padding-top: 5em; */
   color: white;
-}
-
-.title_description {
-  margin: auto 0.4em;
 }
 
 h1 {
@@ -1317,17 +1317,18 @@ h1 {
 
 @media (min-width: 620px) {
   .img__presentation {
-    width: 10em;
+    width: 15vw;
     height: auto;
+    margin: 12vh auto;
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 4.5em;
   }
 }
 .parallax {
   /* The image used */
-  background-image: url("../img/beach.jpg");
+  background-image: url("../img/black.jpg");
   /* Set a specific height */
   min-height: 500px;
   /* Create the parallax scrolling effect */
@@ -1338,45 +1339,23 @@ h1 {
 }
 
 .article__about {
-  width: 75vw;
+  width: 65vw;
   margin: auto;
-  color: #3e4780;
 }
 
 .article__about--fst {
-  text-align: justify;
-}
-
-.article__about--scd {
   text-align: left;
-  margin-left: -2em;
-}
-
-.article__passion-element {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-bottom: 2em;
-  font-size: 1.1em;
-}
-
-.article__about--scd li {
-  list-style-type: none;
-}
-
-.article__about--scd a {
-  color: lightgray;
 }
 
 .passion__projects {
   margin: 0 auto;
   width: 75vw;
+  /* text-align: center; */
 }
 
 .article__experiences, .article__formations {
   margin: auto;
   text-align: left;
-  width: 95vw;
 }
 
 h3 {
@@ -1390,7 +1369,10 @@ h3 {
 .article__passion-img {
   height: auto;
   width: 60vw;
-  margin: auto;
+}
+
+.article__passion-list {
+  list-style-type: none;
 }
 
 .infobulle {
@@ -1407,20 +1389,12 @@ a span {
 
 a:focus span, a:hover span {
   opacity: 1;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 hr {
   position: relative;
-  background-color: #b3823a;
-  border-top: 1.5px solid;
-}
-
-.hr__competences, .hr__contacts, .hr__experiences, .hr__formations, .hr__presentation {
-  width: 75vw;
-}
-
-.hr__presentation {
-  background-color: #272d47;
 }
 
 td a, button a {
@@ -1432,29 +1406,28 @@ td a:hover {
   color: white;
 }
 
-.article__title {
-  text-align: center;
+.article__contact {
+  text-align: right;
+  margin-right: 2em;
 }
 
-@media (min-width: 920px) {
-  .passion__projects {
-    width: 65vw;
-  }
-
-  .hr__competences, .hr__contacts, .hr__experiences, .hr__formations, .hr__presentation {
-    width: 65vw;
-  }
-
-  .hr__competences {
-    border-top: 2px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .hr__presentation {
-    background-color: #272d47;
-  }
-
+@media (min-width: 620px) {
   .article__about {
-    color: #272d47;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .article__about--fst {
+    width: 30vw;
+  }
+
+  .article__experiences, .article__formations {
+    width: 50vw;
+  }
+
+  .article__passion-list {
+    display: flex;
+    justify-content: space-around;
   }
 
   .article__passion-img {
@@ -1463,51 +1436,23 @@ td a:hover {
     margin: 2em;
   }
 
-  .article__passion-list {
-    display: flex;
-    justify-content: space-around;
-  }
-}
-@media (min-width: 1020px) {
-  .article__about {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 70vw;
-  }
-
-  .article__about--fst {
-    width: 30vw;
-  }
-
-  .article__about--scd {
-    width: 35vw;
-  }
-
-  .article__experiences, .article__formations {
-    width: 70vw;
-  }
-}
-@media (min-width: 1350px) {
-  .article__about--scd {
-    width: auto;
+  .passion__projects {
+    width: 65vw;
   }
 }
 .nav__list {
   list-style-type: none;
+  padding-top: 0.2em;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: #b3823a;
+  background-color: #010202;
   position: fixed;
-  padding: 0.2em 5vw;
   width: 100%;
-  z-index: 3;
 }
 
 nav a {
   color: lightgrey;
-  padding: 0 0.5rem;
 }
 
 nav a:hover {
@@ -1518,6 +1463,8 @@ nav a:hover {
 @media (min-width: 620px) {
   .nav__list {
     font-size: 1.3em;
+    position: fixed;
+    background-color: blue;
   }
 
   nav {
@@ -1530,40 +1477,32 @@ nav a:hover {
   border: 2px solid black;
 }
 
-.article__icone, .article__icone-contact {
+.article__icone {
   width: 4em;
   margin: auto;
 }
 
-.article__passion-img {
-  margin-bottom: 0.7em;
-}
-
 @media (min-width: 620px) {
-  .article__icone, .article__icone-contact {
-    width: 5em;
-  }
-}
-@media (min-width: 1020px) {
   .article__project-img {
-    width: 40vw;
+    width: 30vw;
   }
 
-  .article__icone, .article__icone-contact {
-    width: 6em;
+  .article__icone {
+    width: 8em;
+    margin: auto;
   }
 }
 body {
   font-family: "Crimson Text", sans-serif;
-  background-color: #252838;
-  background-image: linear-gradient(43deg, #252838 0%, #2c4e6f 46%, #FFCC70 100%);
+  background-color: #010202;
   font-size: 1.2em;
-  color: #f7e4c7;
+  color: grey;
   text-align: center;
 }
 
 button {
   border-radius: 12px 0 12px 0;
+  background-color: #263163;
   color: white;
   border: none;
   border-bottom: solid;
@@ -1572,17 +1511,32 @@ button {
 }
 
 #btn__cv {
-  border-color: rgb(163, 127, 61);
-  background-color: #b3823a;
-  position: relative;
-  top: 1.5em;
-  z-index: 2;
-  height: 3em;
+  border-color: #a37f3d;
+  background-color: #e4ad46;
 }
 
+@media (min-width: 620px) {
+  #btn__profil {
+    position: absolute;
+    right: 3em;
+    bottom: 4em;
+  }
+
+  button {
+    width: 5em;
+    height: 3em;
+  }
+
+  #btn__cv {
+    position: absolute;
+    left: 3em;
+    top: 4em;
+  }
+}
 @media (min-width: 1000px) {
   button {
     width: 20em;
+    height: 3em;
   }
 }
 table, td, th {
@@ -1603,4 +1557,4 @@ table {
   border-bottom: none;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
